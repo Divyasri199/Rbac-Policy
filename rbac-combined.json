@@ -1,0 +1,38 @@
+﻿{
+  "Name": "Build Resilient IaaS RBAC",
+  "Id": null,
+  "IsCustom": true,
+  "Description": "Build Resilient IaaS RBAC",
+  "Actions": [
+    "Microsoft.Authorization/*/read",
+    "Microsoft.Compute/disks/*",
+    "Microsoft.Compute/virtualMachines/*",
+    "Microsoft.Compute/virtualMachines/extensions/*",
+    "Microsoft.Network/bastionHosts/*",
+    "Microsoft.Network/frontdoors/*",
+    "Microsoft.Network/loadBalancers/*",
+    "Microsoft.Network/natGateways/*",
+    "Microsoft.Network/networkInterfaces/*",
+    "Microsoft.Network/networkSecurityGroups/*",
+    "Microsoft.Network/publicIPAddresses/*",
+    "Microsoft.Network/virtualNetworks/*",
+    "Microsoft.RecoveryServices/vaults/*",
+    "Microsoft.RecoveryServices/locations/*",
+    "Microsoft.Resources/deployments/*",
+    "Microsoft.Resources/subscriptions/resourceGroups/read",
+    "Microsoft.Resources/subscriptions/resourceGroups/write",
+    "Microsoft.SqlVirtualMachine/SqlVirtualMachines/*",
+    "Microsoft.Storage/storageAccounts/*",
+    "Microsoft.RecoveryServices/register/action",
+    "Microsoft.Authorization/roleAssignments/write",
+    "Microsoft.Automation/register/action",
+    "Microsoft.Automation/automationAccounts/*",
+    "Microsoft.SqlVirtualMachine/register/action",
+    "Microsoft.Automation/automationAccounts/runbooks/*"
+  ],
+  "NotActions": [
+
+
+
+  ]
+}
