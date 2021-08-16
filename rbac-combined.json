@@ -19,6 +19,7 @@
     "Microsoft.RecoveryServices/vaults/*",
     "Microsoft.RecoveryServices/locations/*",
     "Microsoft.Resources/deployments/*",
+    "Microsoft.Resources/deployments/validate/action/*",
     "Microsoft.Resources/subscriptions/resourceGroups/read",
     "Microsoft.Resources/subscriptions/resourceGroups/write",
     "Microsoft.SqlVirtualMachine/SqlVirtualMachines/*",
@@ -28,7 +29,6 @@
     "Microsoft.Automation/register/action",
     "Microsoft.Automation/automationAccounts/*",
     "Microsoft.SqlVirtualMachine/register/action",
-    "Microsoft.Resources/deployments/validate/action",
     "Microsoft.Automation/automationAccounts/runbooks/*"
   ],
   "NotActions": [
