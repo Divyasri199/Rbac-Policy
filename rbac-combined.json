@@ -19,7 +19,7 @@
     "Microsoft.RecoveryServices/vaults/*",
     "Microsoft.RecoveryServices/locations/*",
     "Microsoft.Resources/deployments/*",
-    "Microsoft.Resources/deployments/validate/action/*",
+    "Microsoft.Resources/deployments/validate/action",
     "Microsoft.Resources/subscriptions/resourceGroups/read",
     "Microsoft.Resources/subscriptions/resourceGroups/write",
     "Microsoft.SqlVirtualMachine/SqlVirtualMachines/*",
