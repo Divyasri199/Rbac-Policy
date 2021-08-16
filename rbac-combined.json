@@ -28,6 +28,7 @@
     "Microsoft.Automation/register/action",
     "Microsoft.Automation/automationAccounts/*",
     "Microsoft.SqlVirtualMachine/register/action",
+    "Microsoft.Resources/deployments/validate/action",
     "Microsoft.Automation/automationAccounts/runbooks/*"
   ],
   "NotActions": [
