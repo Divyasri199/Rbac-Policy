@@ -29,6 +29,7 @@
     "Microsoft.Automation/register/action",
     "Microsoft.Automation/automationAccounts/*",
     "Microsoft.SqlVirtualMachine/register/action",
+    "Microsoft.Network/routeTables/join/action",
     "Microsoft.Automation/automationAccounts/runbooks/*"
   ],
   "NotActions": [
