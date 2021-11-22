@@ -17,10 +17,10 @@ Param (
     $InstallCloudLabsShadow,
 
     [string] 
-	$SPID,
+    $SPID,
 
     [string]
-	$SPSecretKey,
+    $SPSecretKey,
 
     [string]
     $AzureUserName,
@@ -39,8 +39,6 @@ Start-Transcript -Path C:\WindowsAzure\Logs\CloudLabsCustomScriptExtension.txt -
 
 Remove-Item C:\labfiles -recurse  -force
 
-$WebClient = New-Object System.Net.WebClient
-$WebClient.DownloadFile("https://experienceazure.blob.core.windows.net/templates/tech-immersion-dedicated/lab-files.zip","C:\lab-files.zip")
 
 #unziping folder
 New-Item -ItemType Directory -Force -Path C:\lab-files
