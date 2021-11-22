@@ -14,7 +14,7 @@
       "SPID": {
           "type": "string"
       },
-      "SPDisplayName: {
+      "SPDisplayName": {
           "type": "string"
       },
   
