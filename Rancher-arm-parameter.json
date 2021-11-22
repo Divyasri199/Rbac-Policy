@@ -14,10 +14,10 @@
     "SPID": {
       "value": "GET-SERVICEPRINCIPAL-APPLICATION-ID"
     },
-    "azureUserName": {
+    "AzureUserName": {
       "value": "GET-AZUSER-UPN"
     },
-    "azureUserPassword": {
+    "AzurePassword": {
       "value": "GET-AZUSER-PASSWORD"
     },
     "ODLID": {
