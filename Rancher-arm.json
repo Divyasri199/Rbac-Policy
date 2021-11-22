@@ -96,14 +96,6 @@
         "name": "[variables('storageAccountType')]"
        }
       },
-    {
-      "type": "Microsoft.Storage/storageAccounts/fileServices/shares",
-      "apiVersion": "2021-04-01",
-      "name": "[format('{0}/default/{1}', variables('storageAccountName'), 'newfileshare')]",
-      "dependsOn": [
-        "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]"
-      ]
-    },
 {
       "name": "[variables('virtualMachineName')]",
       "type": "Microsoft.Compute/virtualMachines",
