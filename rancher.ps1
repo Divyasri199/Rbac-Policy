@@ -10,9 +10,7 @@ Param (
     [string]
     $ODLID,
 
-    [string]
-    $DeploymentID,
-
+  
     [string]
     $InstallCloudLabsShadow,
 
@@ -22,12 +20,7 @@ Param (
     [string]
     $SPSecretKey,
 
-    [string]
-    $AzureUserName,
-
-    [string]
-    $AzurePassword,
-
+   
     [string]
     $trainerUserName,
     
@@ -55,10 +48,12 @@ $trainerUserPassword = "Password.!!1"
 
 WindowsServerCommon
 InstallCloudLabsShadow $ODLID $InstallCloudLabsShadow
-CreateCredFile $AzureUserName $AzurePassword $AzureTenantID $AzureSubscriptionID $DeploymentID
 
-SPtoAzureCredFiles $SPDisplayName $SPID $SPObjectID $SPSecretKey $AzureTenantDomainName
-
+$WebClient = New-Object System.Net.WebClient
+    $WebClient.DownloadFile("https://raw.githubusercontent.com/sumitmalik51/Rbac-Policy/main/my-azure.txt","C:\LabFiles\my-azure.txt")
+    Copy-Item "C:\LabFiles\AzureCreds.txt" -Destination "C:\Users\Public\Desktop"
+    
+    
 Enable-CloudLabsEmbeddedShadow $vmAdminUsername $trainerUserName $trainerUserPassword
 
 InstallAzPowerShellModule
