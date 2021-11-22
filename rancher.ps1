@@ -57,7 +57,7 @@ WindowsServerCommon
 InstallCloudLabsShadow $ODLID $InstallCloudLabsShadow
 CreateCredFile $AzureUserName $AzurePassword $AzureTenantID $AzureSubscriptionID $DeploymentID
 
-SPtoAzureCredFiles $SPID $SPSecretKey
+SPtoAzureCredFiles $SPDisplayName $SPID $SPObjectID $SPSecretKey $AzureTenantDomainName
 
 Enable-CloudLabsEmbeddedShadow $vmAdminUsername $trainerUserName $trainerUserPassword
 
