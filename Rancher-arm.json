@@ -83,9 +83,9 @@
         "apiVersion": "2017-10-01",  
         "location": "[resourceGroup().location]",
         "kind": "StorageV2",
-        "properties": {
-          "accountType": "[variables('storageAccountType')]"
-        }
+        "sku": {
+        "name": "[variables('storageAccountType')]"
+       }
       },
 {
       "name": "[variables('virtualMachineName')]",
