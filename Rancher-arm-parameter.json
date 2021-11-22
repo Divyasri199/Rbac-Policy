@@ -20,6 +20,9 @@
     "SPObjectID": {
           "type": "GET-SERVICEPRINCIPAL-OBJECT-ID"
     },
+    "AzureTenantDomainName": {
+           "type": "GET-TENANT-FQDN"
+    },
     "AzureUserName": {
       "value": "GET-AZUSER-UPN"
     },
