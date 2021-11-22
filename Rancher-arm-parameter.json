@@ -18,7 +18,7 @@
       "value": "GET-SERVICEPRINCIPAL-NAME"
     },
     "SPObjectID": {
-          "type": "GET-SERVICEPRINCIPAL-OBJECT-ID"
+          "type": "GET-SERVICEPRINCIPAL-SPOBJECT-ID"
     },
     "AzureTenantDomainName": {
            "type": "GET-TENANT-FQDN"
