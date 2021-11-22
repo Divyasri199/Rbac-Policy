@@ -63,4 +63,8 @@ Enable-CloudLabsEmbeddedShadow $vmAdminUsername $trainerUserName $trainerUserPas
 
 InstallAzPowerShellModule
 
-
+$azureAplicationId ="$SPID"
+$azureTenantId= "cefcb8e7-ee30-49b8-b190-133f1daafd85"
+$azurePassword = ConvertTo-SecureString "$SPSecretKey" -AsPlainText -Force
+$psCred = New-Object System.Management.Automation.PSCredential($azureAplicationId , $azurePassword)
+Connect-AzAccount -Credential $psCred -TenantId $azureTenantId  -ServicePrincipal
