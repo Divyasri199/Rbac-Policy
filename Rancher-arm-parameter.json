@@ -14,9 +14,12 @@
     "SPID": {
       "value": "GET-SERVICEPRINCIPAL-APPLICATION-ID"
     },
-    "SPDisplayName: {
+    "SPDisplayName": {
       "value": "GET-SERVICEPRINCIPAL-NAME"
-      },
+    },
+    "SPObjectID": {
+          "type": "GET-SERVICEPRINCIPAL-OBJECT-ID"
+    },
     "AzureUserName": {
       "value": "GET-AZUSER-UPN"
     },
