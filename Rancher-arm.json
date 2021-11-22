@@ -17,6 +17,9 @@
       "SPDisplayName": {
           "type": "string"
       },
+      "SPObjectID": {
+          "type": "string"
+      },
   
   
       "AzureUserName": {
