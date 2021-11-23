@@ -91,7 +91,7 @@
   {
         "name": "[variables('storageAccountName')]",
         "type": "Microsoft.Storage/storageAccounts",
-        "apiVersion": "2018-07-01",
+        "apiVersion": "2021-04-01",
         "location": "[variables('location')]",
         "kind": "StorageV2",
         "sku": {
@@ -105,7 +105,7 @@
         {
           "name": "[concat('default/', variables('fileServices'))]",
           "type": "fileServices/shares",
-          "apiVersion": "2018-07-01",
+          "apiVersion": "2021-04-01",
           "dependsOn": [
             "[variables('storageAccountName')]"
           ]
