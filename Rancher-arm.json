@@ -123,9 +123,7 @@
       }
     ]
   }
-  "dependsOn": [
-              "[concat('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]"
-   ]
+  "dependsOn": ["[concat('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]"]
 },
     
 {
