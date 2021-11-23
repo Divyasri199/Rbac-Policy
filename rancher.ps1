@@ -56,11 +56,12 @@ Function CreadFiles($AzureTenantID, $AzureSubscriptionID, $SPID, $SPSecretKey)
     New-Item -ItemType directory -Path C:\LabFiles -force
 
 
-    (Get-Content -Path "C:\LabFiles\my-azure.txt") | ForEach-Object {$_ -Replace "AzureTenantID", "$AzureTenantID"} | Set-Content -Path "C:\LabFiles\my-azure.txt"
-    (Get-Content -Path "C:\LabFiles\my-azure.txt") | ForEach-Object {$_ -Replace "AzureSubscriptionID", "$AzureSubscriptionID"} | Set-Content -Path "C:\LabFiles\my-azure.txt"
-    (Get-Content -Path "C:\LabFiles\my-azure.txt") | ForEach-Object {$_ -Replace "Application(Client)ID", "$SPID"} | Set-Content -Path "C:\LabFiles\my-azure.txt"
-    (Get-Content -Path "C:\LabFiles\my-azure.txt") | ForEach-Object {$_ -Replace "SecretKey", "$SPSecretKey"} | Set-Content -Path "C:\LabFiles\my-azure.txt"
-    
+     (Get-Content -Path "C:\LabFiles\my-azure.txt") | ForEach-Object {$_ -Replace "AzureTenantID", "$AzureTenantID"} | Set-Content -Path "C:\LabFiles\my-azure.txt"
+    (Get-Content -Path "C:\LabFiles\my-azure.txt") | ForEach-Object {$_ -Replace "AzuresubID", "$AzureSubscriptionID"} | Set-Content -Path "C:\LabFiles\my-azure.txt"
+    (Get-Content -Path "C:\LabFiles\my-azure.txt") | ForEach-Object {$_ -Replace "clientid", "$SPID"} | Set-Content -Path "C:\LabFiles\my-azure.txt"
+    (Get-Content -Path "C:\LabFiles\my-azure.txt") | ForEach-Object {$_ -Replace "secret", "$SPSecretKey"} | Set-Content -Path "C:\LabFiles\my-azure.txt"
+
+
     Copy-Item "C:\LabFiles\my-azure.txt" -Destination "C:\Users\Public\Desktop"
 }
 
