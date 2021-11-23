@@ -98,17 +98,7 @@
         },
         "properties": {
           "accessTier": "Hot"
-        },
-        "resources": [
-          {
-            "name": "[concat('fileshare-',parameters('DeploymentID'))]",
-            "type": "blobServices/fileshares",
-            "apiVersion": "2018-07-01",
-            "dependsOn": [
-              "[variables('storageaccountname')]"
-            ]
-          }
-        ]
+        }
     },
 {
       "name": "[variables('virtualMachineName')]",
