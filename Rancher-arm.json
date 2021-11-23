@@ -70,7 +70,7 @@
       "addressPrefix": "10.100.0.0/16",
       "subnetPrefix":"10.100.0.0/24",
       "subnetName":"[concat('subnet',parameters('DeploymentID'))]",
-      "storageAccountName":"[concat('stacc',parameters('DeploymentID'))]"
+      "storageAccountName":"[concat('stac',parameters('DeploymentID'))]"
   },
   "resources": [
 {
@@ -100,6 +100,30 @@
           "accessTier": "Hot"
         }
     },
+    {
+     "type": "Microsoft.Storage/storageAccounts/fileServices",
+            "apiVersion": "2021-06-01",
+            "name": "[concat(variables('storageaccountname'), '/default')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.Storage/storageAccounts', variables('storageaccountname'))]"
+            ],
+            "sku": {
+                "name": "Standard_LRS",
+                "tier": "Standard"
+            },
+            "properties": {
+                "protocolSettings": {
+                    "smb": {}
+                },
+                "cors": {
+                    "corsRules": []
+                },
+                "shareDeleteRetentionPolicy": {
+                    "enabled": true,
+                    "days": 7
+                }
+            }
+        },
 {
       "name": "[variables('virtualMachineName')]",
       "type": "Microsoft.Compute/virtualMachines",
