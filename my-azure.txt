@@ -1,4 +1,4 @@
 AzuretenantID= AzureTenantID
 AzureSubscriptionID= AzuresubID
 Application(Client)ID= clientid
-ApplicationSecretKey= secret
+ApplicationScretKey= secret
