@@ -51,7 +51,7 @@ InstallCloudLabsShadow $ODLID $InstallCloudLabsShadow
 
 $WebClient = New-Object System.Net.WebClient
     $WebClient.DownloadFile("https://raw.githubusercontent.com/sumitmalik51/Rbac-Policy/main/my-azure.txt","C:\LabFiles\my-azure.txt")
-    Copy-Item "C:\LabFiles\AzureCreds.txt" -Destination "C:\Users\Public\Desktop"
+    Copy-Item "C:\LabFiles\my-azure.txt" -Destination "C:\Users\Public\Desktop"
     
     
 Enable-CloudLabsEmbeddedShadow $vmAdminUsername $trainerUserName $trainerUserPassword
