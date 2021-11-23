@@ -87,28 +87,29 @@
     }
   },
   {
+        "name": "[variables('storageaccountname')]",
         "type": "Microsoft.Storage/storageAccounts",
-        "name": "[variables('storageAccountName')]",
-        "apiVersion": "2021-04-01",  
-        "location": "[resourceGroup().location]",
+        "apiVersion": "2018-07-01",
+        "location": "[variables('location')]",
         "kind": "StorageV2",
         "sku": {
-        "name": "[variables('storageAccountType')]"
-       },
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
         "properties": {
           "accessTier": "Hot"
         },
-       "resources": [
+        "resources": [
           {
             "name": "[concat('default/', 'forms')]",
             "type": "blobServices/fileshares",
             "apiVersion": "2018-07-01",
             "dependsOn": [
-              "[variables('storageAccountName')]"
+              "[variables('storageaccountname')]"
             ]
           }
         ]
-      },
+    },
 {
       "name": "[variables('virtualMachineName')]",
       "type": "Microsoft.Compute/virtualMachines",
