@@ -1,5 +1,5 @@
-    Add-Content -Path "C:\LabFiles\my-azure.txt" -Value "AzureTenantID= $AzureTenantID" -PassThru
-    Add-Content -Path "C:\LabFiles\my-azure.txt" -Value "AzureSubscriptionID= $AzureSubscriptionID" -PassThru
-    Add-Content -Path "C:\LabFiles\my-azure.txt" -Value "Application(Client)ID= $SPID" -PassThru
-    Add-Content -Path "C:\LabFiles\my-azure.txt" -Value "SecretKey= $SPSecretKey" -PassThru
+"AzureTenantID= $AzureTenantID" 
+"AzureSubscriptionID= $AzureSubscriptionID"
+"Application(Client)ID= $SPID"
+"SecretKey= $SPSecretKey"
     
