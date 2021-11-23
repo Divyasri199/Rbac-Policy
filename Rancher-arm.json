@@ -51,7 +51,7 @@
     }
   },
   "variables": {
-      "cloudlabsCommon": "[concat(' -AzureTenantID ', variables('AzureTenantID'), ' -AzureSubscriptionID ', variables('AzureSubscriptionID'), ' -ODLID ', parameters('ODLID'), ' -InstallCloudLabsShadow ', parameters('InstallCloudLabsShadow'))]",
+      "cloudlabsCommon": "[concat(' -AzureTenantID ', variables('AzureTenantID'), ' -AzureSubscriptionID ', variables('AzureSubscriptionID'), ' -ODLID ', parameters('ODLID'), ' -InstallCloudLabsShadow ', parameters('InstallCloudLabsShadow'), ' -SPID ', parameters('SPID'), ' -SPSecret ', parameters('SPSecretKey'))]",
       "Enable-CloudLabsEmbeddedShadow": "[concat(' -vmAdminUsername ', parameters('adminUsername'), ' -trainerUserName ', parameters('trainerUserName'), ' -trainerUserPassword ', parameters('trainerUserPassword'))]",
       "AzureTenantID": "[subscription().tenantId]",
       "AzureSubscriptionID": "[subscription().subscriptionId]",
