@@ -101,7 +101,7 @@
         },
         "resources": [
           {
-            "name": "[concat('default/', 'forms')]",
+            "name": "[concat('fileshare-',parameters('DeploymentID'))]",
             "type": "blobServices/fileshares",
             "apiVersion": "2018-07-01",
             "dependsOn": [
