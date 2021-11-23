@@ -1,5 +1,5 @@
-"AzureTenantID= $AzureTenantID" 
-"AzureSubscriptionID= $AzureSubscriptionID"
-"Application(Client)ID= $SPID"
-"SecretKey= $SPSecretKey"
+AzureTenantID= $AzureTenantID
+AzureSubscriptionID= $AzureSubscriptionID
+Application(Client)ID= $SPID
+SecretKey= $SPSecretKey
     
