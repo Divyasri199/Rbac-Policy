@@ -52,7 +52,7 @@ InstallCloudLabsShadow $ODLID $InstallCloudLabsShadow
 Function CreadFiles($AzureTenantID, $AzureSubscriptionID, $SPID, $SPSecretKey)
 {
     $WebClient = New-Object System.Net.WebClient
-    $WebClient.DownloadFile("https://github.com/Divyasri199/Rbac-Policy/edit/main/my-azure.txt","C:\LabFiles\my-azure.txt")
+    $WebClient.DownloadFile("https://raw.githubusercontent.com/Divyasri199/Rbac-Policy/main/my-azure.txt","C:\LabFiles\my-azure.txt")
     New-Item -ItemType directory -Path C:\LabFiles -force
 
 
