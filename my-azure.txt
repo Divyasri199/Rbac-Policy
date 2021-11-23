@@ -1,5 +1,4 @@
-AzureTenantID= $AzureTenantID
-AzureSubscriptionID= $AzureSubscriptionID
-Application(Client)ID= $SPID
-SecretKey= $SPSecretKey
-    
+AzuretenantID= AzureUserNameValue
+AzureSubscriptionID= AzurePasswordValue
+Application(Client)ID= AzureTenantIDValue
+SecretKey= AzureSubscriptionIDValue
