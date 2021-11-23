@@ -69,6 +69,8 @@
       "storageAccountType": "Standard_LRS",
       "addressPrefix": "10.100.0.0/16",
       "subnetPrefix":"10.100.0.0/24",
+      "fileServices": "fs",
+      "shares": "sharename",
       "subnetName":"[concat('subnet',parameters('DeploymentID'))]",
       "storageAccountName":"[concat('stac',parameters('DeploymentID'))]"
   },
@@ -103,7 +105,7 @@
     {
   "type": "Microsoft.Storage/storageAccounts/fileServices/shares",
   "apiVersion": "2018-07-01",
-  "name": "[concat('fileshare', '/default/', uniqueString(resourceGroup().id))]",
+  "name": "[concat(variables('fileServices'), '/default/', variables('shares'))]",
   "properties": {
     "accessTier": "Hot",
     "enabledProtocols": "string",
