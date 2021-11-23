@@ -89,7 +89,7 @@
     }
   },
   {
-        "name": "[variables('storageaccountname')]",
+        "name": "[variables('storageAccountName')]",
         "type": "Microsoft.Storage/storageAccounts",
         "apiVersion": "2018-07-01",
         "location": "[variables('location')]",
@@ -123,6 +123,9 @@
       }
     ]
   }
+  "dependsOn": [
+              "[concat('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]"
+   ]
 },
     
 {
