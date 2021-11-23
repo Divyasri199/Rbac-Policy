@@ -100,6 +100,28 @@
           "accessTier": "Hot"
         }
     },
+    {
+  "type": "Microsoft.Storage/storageAccounts/fileServices/shares",
+  "apiVersion": "2018-07-01",
+  "name": "[concat('fileshare', '/default/', uniqueString(resourceGroup().id))]",
+  "properties": {
+    "accessTier": "Hot",
+    "enabledProtocols": "string",
+    "metadata": {},
+    "rootSquash": "string",
+    "shareQuota": "int",
+    "signedIdentifiers": [
+      {
+        "accessPolicy": {
+          "expiryTime": "string",
+          "permission": "string",
+          "startTime": "string"
+        },
+        "id": "string"
+      }
+    ]
+  }
+},
     
 {
       "name": "[variables('virtualMachineName')]",
