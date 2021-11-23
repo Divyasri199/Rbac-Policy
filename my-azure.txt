@@ -1,4 +1,4 @@
-AzuretenantID= AzureUserNameValue
-AzureSubscriptionID= AzurePasswordValue
-Application(Client)ID= AzureTenantIDValue
-SecretKey= AzureSubscriptionIDValue
+AzuretenantID= AzureTenantID
+AzureSubscriptionID= AzuresubID
+Application(Client)ID= clientid
+Application SecretKey= secret
