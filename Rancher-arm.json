@@ -59,7 +59,7 @@
       "subnetRef": "[concat(variables('vnetId'), '/subnets/', variables('subnetName'))]",
       "jumpVMPublicIpName": "[concat('liftshift-vmip-', uniqueString(resourceGroup().id))]",
       "virtualMachineName":"[concat('labvm-',parameters('DeploymentID'))]",
-      "resourceGroupName": "[resourceGroup().name]",
+      "resourceGroupName": "Rancher",
       "virtualNetworkName": "vNet",
       "location": "[resourceGroup().location]",
       "virtualMachineSize":"Standard_D4s_v3",
