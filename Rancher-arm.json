@@ -69,10 +69,10 @@
       "storageAccountType": "Standard_LRS",
       "addressPrefix": "10.100.0.0/16",
       "subnetPrefix":"10.100.0.0/24",
-      "fileServices": "[concat('fs-',parameters('DeploymentID'))]",
+      "fileServices": "blob",
       "shares": "sharename",
       "subnetName":"[concat('subnet',parameters('DeploymentID'))]",
-      "storageAccountName":"[concat('stac',parameters('DeploymentID'))]"
+      "storageAccountName":"[concat('storage',parameters('DeploymentID'))]"
   },
   "resources": [
 {
