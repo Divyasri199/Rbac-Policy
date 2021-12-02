@@ -8,6 +8,7 @@
     "Microsoft.Compute/virtualMachines/*",
     "Microsoft.CognitiveServices/accounts/*",
     "Microsoft.ContainerInstance/containerGroups/*",
+    "Microsoft.CognitiveServices/*",
     "Microsoft.ContainerRegistry/registries/*",
     "microsoft.insights/alertrules/*",
     "microsoft.insights/components/*",
